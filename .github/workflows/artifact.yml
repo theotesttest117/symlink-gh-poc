@@ -1,3 +1,4 @@
+# .github/workflows/artifact.yml
 name: artifact
 on: workflow_dispatch
 jobs:
@@ -8,4 +9,4 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: artifact-evil
-          path: sym/pwned.txt
+          path: sym/  # Upload the entire sym directory, not just the file
